@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    水印参数-->
+    <declare-styleable name="WaterMarkView">
+        <!--        水印文字-->
+        <attr name="text" format="string" />
+        <!--        水平间距-->
+        <attr name="hSpace" format="dimension" />
+        <!--        垂直间距-->
+        <attr name="vSpace" format="dimension" />
+        <!--        角度-->
+        <attr name="degrees" format="integer" />
+        <!--        背景颜色-->
+        <attr name="bgColor" format="color" />
+        <!--        文字颜色-->
+        <attr name="textColor" format="color" />
+        <!--        文字大小-->
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+</resources>
