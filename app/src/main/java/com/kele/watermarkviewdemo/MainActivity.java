@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         WaterMarkView wmv = findViewById(R.id.wmv);
-        wmv.setParams("我是小可乐");
+        wmv.setParams("View实现");
         WaterMarkViewGroup wmvg = findViewById(R.id.wmvg);
-        wmvg.setParams("小可樂是我");
+        wmvg.setParams("ViewGroup实现");
     }
 }
