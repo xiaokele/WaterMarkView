@@ -1,30 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <com.kele.watermarkviewdemo.watermark.WaterMarkView
         android:id="@+id/wmv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="100dp"
         app:bgColor="#F4F4F4"
-        app:text="可乐"
-        app:hSpace="30dp"
-        app:vSpace="30dp"
         app:degrees="-30"
+        app:hSpace="30dp"
+        app:text="可乐"
         app:textColor="#E6E8EC"
-        app:textSize="13sp" />
+        app:textSize="13sp"
+        app:vSpace="30dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f00" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.kele.watermarkviewdemo.watermark.WaterMarkViewGroup
+        android:id="@+id/wmvg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:bgColor="#F4F4F4"
+        app:degrees="-30"
+        app:hSpace="30dp"
+        app:text="可乐"
+        app:textColor="#E6E8EC"
+        app:textSize="13sp"
+        app:vSpace="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="可樂"
+                android:textColor="#ff0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="可樂"
+                android:textColor="#0f0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="可樂"
+                android:textColor="#00f" />
+        </LinearLayout>
+    </com.kele.watermarkviewdemo.watermark.WaterMarkViewGroup>
+</LinearLayout>

@@ -3,6 +3,7 @@ package com.kele.watermarkviewdemo;
 import android.os.Bundle;
 
 import com.kele.watermarkviewdemo.watermark.WaterMarkView;
+import com.kele.watermarkviewdemo.watermark.WaterMarkViewGroup;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,5 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         WaterMarkView wmv = findViewById(R.id.wmv);
         wmv.setParams("我是小可乐");
+        WaterMarkViewGroup wmvg = findViewById(R.id.wmvg);
+        wmvg.setParams("小可樂是我");
     }
 }
